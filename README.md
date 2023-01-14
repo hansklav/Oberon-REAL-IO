@@ -7,7 +7,7 @@ See: https://lists.inf.ethz.ch/pipermail/oberon/2020/015007.html
 Most of those who replied to my post agreed with me that this behaviour is not as it should be and deserves improvement.
 
 Recently I tried and made improvements to these procedures, which you can find in this repository.
-See my post in the Oberon Mailing List ( https://lists.inf.ethz.ch/pipermail/oberon/ )
+See my post in the Oberon Mailing List (https://lists.inf.ethz.ch/pipermail/oberon/2023/016546.html)
 
 To do the tests in TestRealIO.Mod you have to compile the following four modules with the ORP compiler:
 ```
