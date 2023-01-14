@@ -206,7 +206,7 @@ MODULE Texts1;  (* hk  26.12.2022 *)
       ELSE (* e > maxD, x >= 10^maxD *) 
         WriteReal(W, xOrg, 14)    (* last resort, otherwise:
                                      - if e > maxD then array index overflow in procedure dig, or 
-                                     - if maxD > 11 then wrong result                                             *)
+                                     - if maxD > 11 then wrong result                                      *)
       END
     END
   END WriteRealFix;
