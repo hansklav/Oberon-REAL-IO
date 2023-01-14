@@ -1,7 +1,7 @@
 # Oberon-REAL-IO
 ## Improved REAL I/O procedures for Project Oberon 2013.
 
-In 2020 I reported about unexpected wrong output of various borderline REAL values by the present versions of the PO procedures Texts.WriteReal and Texts.WriteRealFix. 
+In 2020 I reported about unexpected wrong output of various borderline REAL values by the present versions of the [Project Oberon](http://www.projectoberon.com/) procedures Texts.WriteReal and Texts.WriteRealFix. 
 See: https://lists.inf.ethz.ch/pipermail/oberon/2020/015007.html 
 
 Most of those who replied to my post agreed with me that this behaviour is not as it should be and deserves improvement.
