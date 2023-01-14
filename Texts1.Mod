@@ -1,4 +1,4 @@
-MODULE Texts1;  (* hk  26.12.2022 *)
+MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
 (* Proposed changes of Scan, WriteReal and WriteRealFix of module Texts in Oberon V5.
    WriteRealHex and seq added.
 *)
