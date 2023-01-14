@@ -1,4 +1,4 @@
-MODULE Reals;
+MODULE Reals; (* IN V5 *)
 (** Low-level procedures for conversion of a sequence of digits into an internal floating-point representation and vice versa *)
 (* Procedure Convert after a 64-bit version found here: 
     https://github.com/vishaps/voc/blob/master/src/runtime/Reals.Mod
