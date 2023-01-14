@@ -1,4 +1,4 @@
-MODULE TestRealIO;  (* hk  14.1.2023 *)
+MODULE TestRealIO; (* IN V5 *)  (* hk  14.1.2023 *)
   IMPORT SYSTEM, Fonts, Texts, Texts1, Oberon, Reals, Limits;
 
   CONST
