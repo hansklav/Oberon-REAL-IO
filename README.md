@@ -1,7 +1,7 @@
 # Oberon-REAL-IO
 Improved REAL I/O procedures for Project Oberon 2013.
 
-To do these tests you have to compile the following four modules with the ORP compiler:
+To do the tests in TestRealIO.Mod you have to compile the following four modules with the ORP compiler:
 ```
   ORP.Compile Limits.Mod Reals.Mod Texts1.Mod TestRealIO.Mod ~
 ```
