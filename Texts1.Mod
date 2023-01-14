@@ -133,8 +133,8 @@ MODULE Texts1;  (* hk  26.12.2022 *)
     ELSIF ORD(x) = 4B7FFFFFH THEN seq(W, " ", n-14); Texts.WriteString(W, "  1.677721E+07"); 
     ELSIF ORD(x) = 0CB7FFFFFH THEN seq(W, " ", n-14); Texts.WriteString(W, " -1.677721E+07");
     ELSIF ORD(ABS(x)) < 0A800000H THEN  (* ABS(x) < 1.232596E-32 *)
-        Texts.WriteString(W, " Underflow in Texts1.WriteReal");  Texts.Append(Oberon.Log, W.buf);
-        (*ASSERT(FALSE)*)
+      Texts.WriteString(W, " Underflow in Texts1.WriteReal");  Texts.Append(Oberon.Log, W.buf);
+      (*ASSERT(FALSE)*)
     ELSE Texts.Write(W, " ");
       WHILE n >= 15 DO DEC(n); Texts.Write(W, " ") END ;
       IF n < 9 THEN n := 9 END;                                                           (* hk 03.10.2020 *)
