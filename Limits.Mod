@@ -1,4 +1,4 @@
-MODULE Limits;  (* For Oberon System V5. hk 31.12.2022 *)
+MODULE Limits; (* IN V5 *)  (* hk 31-12-2022 *)
   IMPORT SYSTEM;
   
   CONST
