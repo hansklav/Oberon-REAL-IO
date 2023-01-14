@@ -1,6 +1,14 @@
 # Oberon-REAL-IO
 Improved REAL I/O procedures for Project Oberon 2013.
 
+In 2020 I reported about unexpected wrong output of various borderline REAL values by the present versions of the PO procedures Texts.WriteReal and Texts.WriteRealFix. 
+See: https://lists.inf.ethz.ch/pipermail/oberon/2020/015007.html 
+
+Most of those who replied to my post agreed with me that this behaviour is not as it should be and deserves improvement.
+
+Recently I tried and made improvements to these procedures, which you can find in this repository.
+See my post in the Oberon Mailing List ( https://lists.inf.ethz.ch/pipermail/oberon/ )
+
 To do the tests in TestRealIO.Mod you have to compile the following four modules with the ORP compiler:
 ```
   ORP.Compile Limits.Mod Reals.Mod Texts1.Mod TestRealIO.Mod ~
