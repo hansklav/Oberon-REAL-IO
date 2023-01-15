@@ -59,16 +59,16 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
           n := 10*n + d; h := 10H*h + d; Texts.Read(S, ch) 
         END ;
         IF ch = "H" THEN (*hex integer*) Texts.Read(S, ch); S.i := h; S.class := Texts.Int (*neg?*)
-        ELSIF ch = "." THEN 
-          (* real number; max. 7 (or 8, if x < 16777216.0) digits before the decimal point, otherwise TRAP 7. *)
-          (* Most values are trapped by the first boolean, values with 8 digits  > 16777215 by the second,    *)
-          (* -2147483648 (the only value in which the sign is not flipped) is trapped by the last boolean:    *)
-          (* ********************************************************************************** hk 26.11.2022 *)
+        ELSIF ch = "." THEN (*real number*)
+          (* Max. 7 (or 8, if x < 16777216.0) digits before the decimal point, otherwise TRAP 7.                   *)
+          (* Most unacceptable values are trapped by the first Boolean, values with 8 digits  > 16777215 by the    *)
+          (* second, -2147483648 (the only value in which the sign is not flipped) is trapped by the last Boolean. *)
+          (* *************************************************************************************** hk 26.11.2022 *)
           IF (ABS(n) # n) OR (ABS(n) > maxM) OR (n < -2147483647) THEN 
              Texts.WriteString(W, "Overflow of FLT(x) in Texts1.Scan"); Texts.Append(Oberon.Log, W.buf);
             ASSERT(FALSE)
           END;
-          (* ********************************************************************************** hk 26.11.2022 *)
+          (* *************************************************************************************** hk 26.11.2022 *)
           Texts.Read(S, ch); x := 0.0; e := 0; j := 0;
           WHILE ("0" <= ch) & (ch <= "9") DO (*fraction*) 
             h := 10*n + (ORD(ch) - 30H);
