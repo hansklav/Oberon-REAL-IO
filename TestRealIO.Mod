@@ -364,7 +364,7 @@ ORP.Compile Limits.Mod Reals.Mod Texts1.Mod TestRealIO.Mod ~
 [ If you make changes to the original Texts.Mod you have to compile (part of) the whole Oberon System, 
    otherwise you might end up with a system that does not boot anymore. This sounds more daunting than it is.
    Just use the text Rebuild.Tool from my GitHub pages and compile the line containing Texts.Mod and then
-   compile ALL THE LINES BELOW THAT LINE (middle-click each ORP.Compile). That's it!                                     ]
+   compile ALL THE LINES BELOW THAT LINE (in a strict downward order middle-click each ORP.Compile). That's it!                                     ]
 
 Right-click the first digit of one of the REAL numbers below, then middle-click  TestRealIO.Do^ 
  1554.70E5     6 2
