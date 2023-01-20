@@ -161,7 +161,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
   PROCEDURE WriteRealFix* (VAR W: Texts.Writer; x: REAL; n, k: INTEGER);
   (* JG  21.11.1990 / hk 29.10.2022 *)
     CONST maxD = 9;  (* maximal number of digits written, apart from leading zeros; 11 is a hard upper limit! *)
-    VAR e, i, j, k0: INTEGER; sign: CHAR; x0, xOrg: REAL;
+    VAR e, i, k0: INTEGER; sign: CHAR; x0, xOrg: REAL;
       d: ARRAY maxD OF CHAR;  (* digits *)
 
     PROCEDURE dig (VAR W: Texts.Writer; d: ARRAY OF CHAR; VAR i: INTEGER; n: INTEGER);
