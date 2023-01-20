@@ -204,7 +204,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
           IF x = 0.5 THEN seq(W, "0", k0) ELSE seq(W, "0", -e);  dig(W, d, i, k+e) END    (* hk 25.10.2022 *)
         END
       ELSE (* e > maxD, x >= 10^maxD *) 
-        WriteReal(W, xOrg, 14)    (* last resort, otherwise:
+        WriteReal(W, xOrg, n)    (* last resort, otherwise:
                                      - if e > maxD then array index overflow in procedure dig, or 
                                      - if maxD > 11 then wrong result                                      *)
       END
