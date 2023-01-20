@@ -142,7 +142,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
       IF x < 0.0 THEN Texts.Write(W, "-"); x := -x ELSE Texts.Write(W, " ") END ;
       e := (e - 127) * 77 DIV 256 - 6;  (* decimal exponent = exponent of 10 *)
       IF e >= 0 THEN x := x / Ten(e) ELSE x := Ten(-e) * x END;
-      m := FLOOR(x + 0.5);  (* significand or mantissa; 7 or 8 digits; last digit rounded, half rounded away from zero *)
+      m := FLOOR(x + 0.5);  (* significand or mantissa; 7 or 8 digits; last digit rounded, half rounded towards +INF *)
       IF m >= 10000000 THEN INC(e); m := m DIV 10 END ;  (* 7 digits *)
       i := 0; k := 13-n;
       REPEAT
