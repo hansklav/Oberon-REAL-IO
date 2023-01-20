@@ -178,7 +178,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
       ELSIF ORD(x) = 0FF800000H THEN seq(W, " ", n-k-6); Texts.WriteString(W, " -INF"); seq(W, " ", k+1)
       ELSE seq(W, " ", n-k-5); Texts.WriteString(W, " NaN"); seq(W, " ", k+1)
       END
-      ELSE e := (e - 127) * 77 DIV 256;   (* 77/256 = log 2 *)
+    ELSE e := (e - 127) * 77 DIV 256;   (* 77/256 = log 2 *)
       IF x < 0.0 THEN sign := "-"; x := -x ELSE sign := " " END;
       IF e >= 0 THEN (* x >= 1.0 *) x := x/Ten(e)
       ELSE (* x < 1.0 *) x := Ten(-e) * x 
