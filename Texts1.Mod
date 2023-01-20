@@ -64,7 +64,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
           (* second, -2147483648 (the only value in which the sign is not flipped) is trapped by the last Boolean. *)
           (* *************************************************************************************** hk 26.11.2022 *)
           IF (ABS(n) # n) OR (ABS(n) > maxM) OR (n < -2147483647) THEN 
-             Texts.WriteString(W, "Overflow of FLT(x) in Texts1.Scan"); Texts.Append(Oberon.Log, W.buf);
+            Texts.WriteString(W, "Overflow of FLT(x) in Texts1.Scan"); Texts.Append(Oberon.Log, W.buf);
             ASSERT(FALSE)
           END;
           (* *************************************************************************************** hk 26.11.2022 *)
