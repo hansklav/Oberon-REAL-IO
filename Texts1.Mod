@@ -211,5 +211,5 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
     END
   END WriteRealFix;
 
-BEGIN Texts.OpenWriter(W)
+
 END Texts1.
