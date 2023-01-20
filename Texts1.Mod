@@ -187,7 +187,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
       (* 1 <= x < 10 *)
       k0 := k;                                                                            (* hk 29.09.2022 *)
       IF k+e >= maxD-1 THEN k := maxD-1-e
-      ELSIF k+e < 0 THEN (* k := -e-1; *) k := -e; x := 0.0                               (* hk 24.10.2022 *)
+      ELSIF k+e < 0 THEN k := -e; x := 0.0                                                (* hk 24.10.2022 *)
       END;
       x0 := Ten(k+e);  x := x0*x + 0.5; 
       IF x >= 10.0*x0 THEN INC(e) END; 
