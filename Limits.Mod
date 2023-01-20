@@ -15,7 +15,7 @@ MODULE Limits; (* IN V5 *)  (* hk 31-12-2022 *)
     minREAL32 = 0.2E-37;                  (** don't use 2.0E-38 ! *)  (* IEEE 754: 1.17549435E-38 *)
 
     (** limitation of Texts.WriteReal *)
-    minPosWriteReal*   =   1.232596E-32;  (* Reals.Real(0A800005H) *) 
+    minPosWriteReal* =  1.232596E-32;     (* Reals.Real(0A800005H) *) 
     maxNegWriteReal* = -1.232596E-32;     (* Reals.Real(8A800005H) *) 
 
   (* maxREAL64 = 1.79769313486232E+308;   (* 1.7976931348623157E308;  15 significant digits *)  *)
