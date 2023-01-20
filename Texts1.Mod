@@ -31,7 +31,6 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
 
 
   PROCEDURE Scan* (VAR S: Texts.Scanner);
-  
     CONST maxExp = 38;  maxM = 16777216 - 1;  (* 2^24 - 1 *)                              (* hk 26.11.2022 *) 
     VAR ch: CHAR;
       neg, negE, hex: BOOLEAN;
@@ -157,6 +156,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
       Texts.Write(W, CHR(e DIV 10 + 30H)); Texts.Write(W, CHR(e MOD 10 + 30H))
     END
   END WriteReal;
+
 
   PROCEDURE WriteRealFix* (VAR W: Texts.Writer; x: REAL; n, k: INTEGER);
   (* JG  21.11.1990 / hk 29.10.2022 *)
