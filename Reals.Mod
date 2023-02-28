@@ -97,7 +97,7 @@ MODULE Reals; (* IN V5 *)
       (* There are more decimal digits than can be handled by FLT(i):
         FLT(i) for 32-bit REAL can't handle more than 24 bits: maxFLT = 16777215 (2^24 - 1).
       *)
-      i := FLOOR(x /               10000000.0);   (* The 8th and higher digits *)
+      i := FLOOR(x /           10000000.0);   (* The 8th and higher digits *)
       j := FLOOR(x - (FLT(i) * 10000000.0));  (* The lower 7 digits *)
       (* First generate the lower 7 digits *)
       IF j < 0 THEN j := 0 END;
