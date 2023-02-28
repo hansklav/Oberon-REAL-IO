@@ -2,16 +2,16 @@ MODULE Reals; (* IN V5 *)
 (** Low-level procedures for conversion of a sequence of digits into an internal floating-point representation and vice versa *)
 (* Procedure Convert after a 64-bit version found here: 
     https://github.com/vishaps/voc/blob/master/src/runtime/Reals.Mod
-  JT, 5.2.90 / RC 9.12.91 conversion between reals and strings for HP-700, MB 9.12.91, JT for Ofront, 16.3. 95.
+  JT, 5.2.90 / RC 9.12.91 conversion between reals and strings for HP-700, MB 9.12.91, JT for Ofront, 16.3.95.
   DCWB 20160817 Made independent of INTEGER size.
   Ported to Oberon-07 / Oberon System V5  (32-bit REAL)  hk 28-9-2022.
 
   Real number formats (IEEE 754)
-  -------------------------
+  ------------------------------
 
     TYPE REAL - Single precision or Binary32 (1+8+23):
 
-  x = 1.m * 2^(e-127)   bit 0: sign, bits 1- 8: e, bits  9-31: m
+  x = 1.m * 2^(e-127)   bit 0: sign, bits 1-8: e, bits  9-31: m
 
     e = exponent (8 bits):
        stored as exponent value + 127.
