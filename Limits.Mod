@@ -3,10 +3,10 @@ MODULE Limits; (* IN V5 *)  (* hk 31-12-2022 *)
   
   CONST
     maxBYTE* = 255;                       (* 2^8 *)
-    maxINT8   = 127;                      (* (2^7)-1 *)
+    maxINT8  = 127;                       (* (2^7)-1 *)
     maxINT16 = 32767;                     (* (2^15)-1 *) 
     maxINT32 = 2147483647;                (* (2^31)-1 *)
-  (* maxINT64 = 9223372036854775807;      (* 2^63)-1 *)  *)
+ (* maxINT64 = 9223372036854775807;       (* 2^63)-1 *)  *)
  
     maxFLT32 = 16777215;                  (* 2^24-1 *)
     maxFLOOR32 = 16777215.00;
@@ -18,7 +18,7 @@ MODULE Limits; (* IN V5 *)  (* hk 31-12-2022 *)
     minPosWriteReal* =  1.232596E-32;     (* Reals.Real(0A800005H) *) 
     maxNegWriteReal* = -1.232596E-32;     (* Reals.Real(8A800005H) *) 
 
-  (* maxREAL64 = 1.79769313486232E+308;   (* 1.7976931348623157E308;  15 significant digits *)  *)
+ (* maxREAL64 = 1.79769313486232E+308;    (* 1.7976931348623157E308;  15 significant digits *)  *)
 
   VAR 
     intSize, realSize: INTEGER;
@@ -57,5 +57,5 @@ BEGIN
   ELSIF realSize = 8 THEN (* maxREAL := maxREAL64 *)
     ASSERT(FALSE)  (* Limits.maxREAL64: not yet implemented *)
   END;
-  maxSET := MaxSET( );
+  maxSET := MaxSET( )
 END Limits.
