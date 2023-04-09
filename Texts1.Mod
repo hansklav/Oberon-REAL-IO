@@ -139,7 +139,7 @@ MODULE Texts1; (* IN V5 *)  (* hk  26.12.2022 *)
       IF n < 9 THEN n := 9 END;                                                           (* hk 03.10.2020 *)
       (* 2 < n < 9 digits to be written*)
       IF x < 0.0 THEN Texts.Write(W, "-"); x := -x ELSE Texts.Write(W, " ") END ;
-      e := (e - 127) * 77 DIV 256 - 6;  (* decimal exponent = exponent of 10 *)
+      e := (e - 127) * 77 DIV 256 - 6;  (* decimal exponent = exponent of 10;  77/256 = log 2 *)
       IF e >= 0 THEN x := x / Ten(e) ELSE x := Ten(-e) * x END;
       m := FLOOR(x + 0.5);  (* significand or mantissa; 7 or 8 digits; last digit rounded, half rounded towards +INF *)
       IF m >= 10000000 THEN INC(e); m := m DIV 10 END ;  (* 7 digits *)
