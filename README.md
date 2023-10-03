@@ -13,10 +13,13 @@ To do the tests in TestRealIO.Mod you have to compile the following four modules
 ```
   ORP.Compile Limits.Mod Reals.Mod Texts1.Mod TestRealIO.Mod ~
 ```
-If you make changes to the original Texts.Mod you have to compile (part of) the whole Oberon System, 
-otherwise you might end up with a system that does not boot anymore. This sounds more daunting than it is.
-Just use the text Rebuild.Tool and compile the line containing Texts.Mod and then
-compile ALL THE LINES BELOW THAT LINE (in a strict downward order middle-click each ORP.Compile). That's it!
+You can do the tests using Texts1.Mod without making changes to Texts.Mod. 
+
+If you find the test results satisfactory and would like to incorporate the changes into Texts.Mod you can use
+the ready-made files Limits.Mod, Reals.mod and Texts.Mod provided. Then you will have to compile (part of) the 
+whole Oberon System, otherwise you might end up with a system that does not boot anymore. This sounds more daunting
+than it is. Just use the text Rebuild.Tool and compile the line containing Texts.Mod and then compile 
+ALL THE LINES BELOW THAT LINE (in a strict downward order middle-click each ORP.Compile). That's it!
 
 ```
 [ Rebuild.Tool ]
