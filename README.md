@@ -48,6 +48,6 @@ ORP.Compile Clipboard.Mod/s  PCLink1.Mod  Def.Mod ~
 ORP.Compile In.Mod/s  Out.Mod/s  Out1.Mod/s ~
 ORP.Compile Round.Mod/s  Math.Mod/s  Random.Mod/s ~
 ORP.Compile XYplane.Mod/s  IFS.Mod/a ~
-ORP.Compile <other modules that import one of the above modules > ~
+ORP.Compile <other modules that import one of the above modules> ~
 ```
 
