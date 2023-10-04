@@ -6,7 +6,7 @@ See: https://lists.inf.ethz.ch/pipermail/oberon/2020/015007.html
 
 Most of those who replied to my post agreed with me that this behaviour is not as it should be and deserves improvement.
 
-Recently I tried and made improvements to these procedures, which you can find in this repository.
+In 2022 I tried and made improvements to these procedures, which you can find in this repository.
 See my post in the Oberon Mailing List (https://lists.inf.ethz.ch/pipermail/oberon/2023/016546.html).
 
 To do the tests in TestRealIO.Mod you have to compile the following four modules with the ORP compiler:
@@ -20,6 +20,7 @@ the ready-made files Limits.Mod, Reals.mod and Texts.Mod provided. Then you will
 whole Oberon System, otherwise you might end up with a system that does not boot anymore. This sounds more daunting
 than it is. Just use the text Rebuild.Tool and compile the line containing Texts.Mod and then compile 
 ALL THE LINES BELOW THAT LINE (in a strict downward order middle-click each ORP.Compile). That's it!
+You won't need ORL.Mod, but in case you need it you can find it here: https://github.com/andreaspirklbauer/Oberon-building-tools/tree/master
 
 ```
 [ Rebuild.Tool ]
