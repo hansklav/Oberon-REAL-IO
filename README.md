@@ -21,7 +21,7 @@ whole Oberon System, otherwise you might end up with a system that does not boot
 than it is. Just use the text Rebuild.Tool below and compile the line containing Texts.Mod and then compile 
 ALL THE LINES BELOW THAT LINE (in a strict downward order middle-click each ORP.Compile). That's it!
 
-For this you won't need ORL.Mod, but in case you need it you can find it here: https://github.com/andreaspirklbauer/Oberon-building-tools/tree/master
+For this you won't need ORL.Mod, but in case you do need it you can find it here: https://github.com/andreaspirklbauer/Oberon-building-tools/tree/master
 
 ```
 [ Rebuild.Tool ]
