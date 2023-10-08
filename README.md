@@ -27,7 +27,7 @@ For this you won't need ORL.Mod, but in case you do need it you can find it here
 [ Rebuild.Tool ]
 
 Rebuild the whole Oberon System (including the compiler):
--------------------------------------------------------
+--------------------------------------------------------
 ORP.Compile  Kernel.Mod/s  FileDir.Mod/s  Files.Mod/s  Modules.Mod/s ~
 ORL.Link Modules ~
 ORL.Load Modules.bin ~
