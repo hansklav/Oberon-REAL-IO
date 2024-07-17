@@ -2,7 +2,7 @@ MODULE Limits; (* IN V5 *)  (* hk 31-12-2022 *)
   IMPORT SYSTEM;
   
   CONST
-    maxBYTE* = 255;                       (* 2^8 *)
+    maxBYTE* = 255;                       (* (2^8)-1 *)
     maxINT8  = 127;                       (* (2^7)-1 *)
     maxINT16 = 32767;                     (* (2^15)-1 *) 
     maxINT32 = 2147483647;                (* (2^31)-1 *)
